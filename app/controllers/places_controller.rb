@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
    
     def index
         
-        @places = Place.all
+        @places = Place.order(:id).all
         @places = Place.paginate(:page => params[:page], :per_page => 10)
         @places_last = Place.last
     end
