@@ -126,8 +126,12 @@
   <div>
     <blockquote>
       <b><%= photo.caption %></b> -
-  
+      <%= photo.input :picture %>
     </blockquote>
   </div>
 <% end %>
 
+<% @place.photos.each do |photo| %>
+  <%= image_tag photo.picture %>
+  <%= photo.caption %>
+<% end %>
