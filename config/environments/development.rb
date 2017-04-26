@@ -64,7 +64,7 @@ Rails.application.configure do
 #    password: ENV['GMAIL_PASSWORD']
 #  }
   
-
+config.action_mailer.delivery_method = :test
   
   
 end
