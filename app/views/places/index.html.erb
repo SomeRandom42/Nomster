@@ -19,12 +19,12 @@
          
           <%if place.photos.present? %>
                 <div class="col-12">
-              <blockquote>
+              
                 <% if place.photos.present? %>
-                  <b><%= image_tag place.photos.picture %></b> -
+                  <b><%= image_tag place.photos.last.picture %></b> -
                 <% end %>
         <%end%>    
-         <blockquote>
+         
              </div>
 </div>  
   
